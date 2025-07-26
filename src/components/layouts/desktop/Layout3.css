@@ -1,0 +1,138 @@
+:root {
+  --bg-color: white;
+  --font-color: black;
+  --accent-color: #3498db;
+}
+
+.dark-view {
+  --bg-color: #1a1a1a;
+  --font-color: white;
+  --accent-color: #2980b9;
+}
+
+.DL3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.DL3 > header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--accent-color);
+  padding: 1em;
+}
+
+.DL3 > header h1 {
+  font-size: 2em;
+  margin: 0.7em;
+  color: white;
+}
+
+.menu-icon {
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 2em 1em;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 11;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.sidebar li {
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sidebar li:hover {
+  text-shadow: 0px 0px 3px var(--bg-color);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9;
+  border-radius: 12px;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.DL3 > main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  flex: 1;
+  gap: 2em;
+}
+
+.text {
+  flex: 1;
+}
+
+.image-box {
+  flex: 1;
+  background-color: #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}

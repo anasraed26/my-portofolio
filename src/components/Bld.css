@@ -1,0 +1,171 @@
+.build-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 500px;
+    margin-top: -5em;
+}
+
+
+.title {
+  font-size: 3em;
+  color: white;
+}
+
+.buttons {
+    display: flex;
+    gap: 2em;
+}
+
+.switch {
+    font-size: 2rem;
+    padding: 0em 2em 0em 0em;
+    border: 0;
+    border-radius: 0.7em;
+    transition: all 1s ease;
+    border: 2px solid rgb(90, 90, 10)
+}
+
+.on {
+    padding: 0em 0em 0em 2em;
+}
+
+.dark {
+    background-color: rgb(45, 38, 56);
+    border: 2px solid rgb(225, 225, 78)
+}
+
+.view {
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.desktop-view {
+    width: 62.5em;
+    height: 35em;
+    border-radius: 3em;
+    margin-top: 5em;
+    background-color: aliceblue;
+    border: 0.5em solid rgb(75, 75, 75);
+}
+.mobile-view {
+    width: 20em;
+    height: 35em;
+    border-radius: 3em;
+    margin-top: 5em;
+    background-color: aliceblue;
+    border-top: 1em solid black;
+    border-bottom: 1em solid black;
+    border-left: 0.8em solid black;
+    border-right: 0.8em solid black;
+    position: relative;
+}
+
+.mobile-view::before {
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: black;
+    left: 48.5%;
+    top: 0.5em;
+}
+
+.dark-view {
+    background-color: rgb(45, 38, 56) !important;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    font-size: 2em;
+    color: white;
+    margin-right: 5em;
+    padding: 0;
+    transition: all 1s ease;
+}
+
+fieldset legend {
+    margin: 0 0 1em 0;
+}
+.fieldAdj {
+    transform: translateX(4em);
+}
+
+.viewSet {
+    display: flex;
+    align-items: center;
+    margin-left: -22em;
+}
+
+.layout {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.layout:hover {
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5));
+}
+.radio {
+    display: none;
+}
+
+label input[type="radio"]:checked ~ img {
+  width: 100px;
+  filter: drop-shadow(0px 0px 4px rgb(255, 247, 2));
+  z-index: 5;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 1.5em;
+  align-items: center;
+  color: white;
+  font-size: 1em;
+  justify-content: center;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.brand-input {
+  padding: 0.4em 0.8em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: white;
+  color: black;
+}
+
+.color-picker {
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cube {
+  pointer-events: none;
+}
+.color-picker {
+  position: relative;
+  z-index: 20;
+}
+
+.build-sec {
+  margin-bottom: 0; 
+  padding-bottom: 2rem; 
+}

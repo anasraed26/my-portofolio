@@ -1,0 +1,38 @@
+.skills-sec {
+  text-align: center;
+  color: white;
+  padding: 4rem 1rem;
+  margin-bottom: 2em;
+}
+
+.skills-sec h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-sec ul {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: left;
+}
+
+.skills-sec li {
+  margin-bottom: 0.75rem;
+  font-size: 1.7rem;
+}
+
+/* 👇 Mobile adjustments */
+@media (max-width: 768px) {
+  .skills-sec {
+    padding: 2rem 1rem;
+  }
+
+  .skills-sec h1 {
+    font-size: 2rem;
+  }
+
+  .skills-sec li {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,32 @@
+.about-sec {
+  text-align: center;
+  color: white;
+  padding: 4rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-sec h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-sec p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+/* 👇 Mobile adjustments */
+@media (max-width: 768px) {
+  .about-sec {
+    padding: 2rem 1rem;
+  }
+
+  .about-sec h1 {
+    font-size: 2rem;
+  }
+
+  .about-sec p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,125 @@
+:root {
+  --bg-color: white;
+  --font-color: black;
+  --accent-color: #3498db;
+}
+
+.dark-view {
+  --bg-color: #1a1a1a;
+  --font-color: white;
+  --accent-color: #2980b9;
+}
+
+.DL1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1em 2em;
+}
+
+.DL1 > header {
+  text-align: center;
+  padding: 1.5em 0 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.DL1 > header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 0.8em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.nav-links span {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links span:hover {
+  color: var(--accent-color);
+}
+
+.DL1 > main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+  padding: 2em 0;
+  flex: 1;
+}
+
+.left-card {
+  flex: 1;
+  background-color: var(--accent-color);
+  padding: 2em;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.left-card h2 {
+  margin: 0 0 0.5em;
+  font-size: 1.8em;
+}
+
+.left-card p {
+  font-size: 1em;
+  margin-bottom: 1.2em;
+}
+
+.left-card button {
+  background-color: white;
+  color: var(--accent-color);
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left-card button:hover {
+  background-color: #f0f0f0;
+}
+
+.right-text {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-text h3 {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+
+.right-text ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+.DL1 > footer {
+  text-align: center;
+  padding: 1em 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+}

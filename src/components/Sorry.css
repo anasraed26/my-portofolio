@@ -1,0 +1,53 @@
+.sorry-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.sorry-box {
+  background-color: white;
+  color: #333;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sorry-box h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sorry-box p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sorry-box img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.sorry-box button {
+  background-color: #db72e5;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sorry-box button:hover {
+  background-color: #c35bd4;
+}

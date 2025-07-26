@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jersey 25";
+  background-color: #7f0dc1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #db72e5;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(255, 251, 0, 0.6);
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+
+.nav-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-container h2 {
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+nav > h1,  .nav-container h2{
+  transition: all 0.3s ease;
+}
+
+nav > h1:hover, .nav-container h2:hover {
+  text-shadow: 0 0 5px rgba(255, 251, 0, 0.6);
+}
+
+ @keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation: slideInDown 0.7s ease-out forwards;
+}
+
+.nav-icon {
+  width: 50px;
+}
+
+@media (max-width: 600px) {
+    html {
+      font-size: 12px;
+    }
+}
+
+
+
+/* testing */
+.cube-float-down {
+  animation: cubeDown 1s ease forwards;
+}
+
+.bubble-float-down {
+  animation: bubbleDown 1s ease forwards;
+}
+
+@keyframes cubeDown {
+  0% {
+    transform: translateY(0px) translateX(300px);
+  }
+  100% {
+    transform: translateY(500px) translateX(300px);
+  }
+}
+
+.hero-section,
+.build-sec {
+  min-height: 100vh;
+}
+
+.centerNav {
+  justify-content: center;
+}
